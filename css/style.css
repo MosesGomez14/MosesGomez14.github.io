@@ -118,16 +118,16 @@ section::before
     font-size: 75px;
     color: black;
     text-transform: capitalize;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     
 }
 .sobremi-textos h5
 {
-    font-size: 40px;
+    font-size: 30px;
     color: rgb(0, 0, 0);
     text-transform: capitalize;
     letter-spacing: 2px;
-    margin-bottom: 25px;
+    margin-bottom: 40px;
     
 }
 .sobremi-textos p
