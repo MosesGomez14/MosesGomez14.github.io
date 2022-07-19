@@ -11,7 +11,7 @@
     <header>
         <a href="#"class="logo">Moses Gomez</a>
         <ul>
-            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#" class="active">Inicio</a></li>
             <li><a href="#">Sobre mi</a></li>
             <li><a href="#">Mi trabajo</a></li>
             <li><a href="#">Contactame</a></li>
@@ -19,13 +19,22 @@
     </header>
         <section>
         <img src="imagenes/miFoto.jpeg" id="yo">
-        <h2 id="text">Mi portafolio</h2>
+        <h2 id="titulo">Mi portafolio</h2>
         </section>
     <div class="sec">
         <h2>Prueba</h2>
         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat cumque voluptates corrupti officiis nisi. Saepe itaque accusantium nisi. Impedit nostrum aspernatur molestiae cumque maxime nisi, accusamus temporibus. Vitae, deleniti inventore?
+            Te amo Guadalupe
         </p>
     </div>
+
+    <script>
+        let titulo=document.getElementById("titulo")
+
+        window.addEventListener('scroll',function(){
+            let value=window.scrollY;
+            titulo.style.marginTop=value*1.5+'px';
+        })
+    </script>
 </body>
 </html>
