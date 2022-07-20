@@ -18,17 +18,27 @@
         </ul>
     </header>
         <section>
-        <h2 id="titulo">Mi portafolio</h2>
+        <h2 id="titulo">Portafolio</h2>
         </section>
         <section class="sobremi">
             <div class="principal">
                 <img src="imagenes/miFoto.jpeg" id="yo">
                 <div class="sobremi-textos">
-                    <h2>Sobre mi</h2>
-                    <h5>Programador <span>& Ing. Logistica y transporte</span></h5>
-                    <p>
+                    <h2 class="sobreMiTitulo">Sobre mi</h2>
+                    <h5 class="Exp">Programador <span>& Ing. Logistica y transporte</span></h5>
+                    <p class="infoSobreMi">
                         Programador de videojuegos con mas de 6 años de experiencia en el desarrollo de videojuegos
                         en Unity y en el lenguaje C#
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="miTrabajo">
+            <div class="MTprincipal">
+                <div class="mt-textos">
+                    <h2>Mis proyectos</h2>
+                    <p>
+                        Proyectos personales
                     </p>
                 </div>
             </div>
@@ -36,10 +46,16 @@
 
     <script>
         let titulo=document.getElementById("titulo")
+        let smTitulo=document.getElementById("sobreMiTitulo")
+        let smEXP=document.getElementById("Exp")
+        let info=document.getElementById("infoSobreMi")
+        let imagenMia=document.getElementById("yo")
 
         window.addEventListener('scroll',function(){
             let value=window.scrollY;
             titulo.style.marginTop=value*1.5+'px';
+
+            
         })
     </script>
 </body>
