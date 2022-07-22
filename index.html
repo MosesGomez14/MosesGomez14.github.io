@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moses Gomez Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
 </head>
 <body>
     <header>
@@ -24,8 +25,8 @@
             <div class="principal">
                 <img src="imagenes/miFoto.jpeg" id="yo">
                 <div class="sobremi-textos">
-                    <h2 class="sobreMiTitulo">Sobre mi</h2>
-                    <h5 class="Exp">Programador <span>& Ing. Logistica y transporte</span></h5>
+                    <h2 class="sobreMiTitulo">Derrick Moses Gomez Fernandez</h2>
+                    <h5 class="Exp"> <span class="escribir"></span></h5>
                     <p class="infoSobreMi">
                         Programador de videojuegos con mas de 6 años de experiencia en el desarrollo de videojuegos
                         en Unity y en el lenguaje C#
@@ -35,8 +36,8 @@
         </section>
         <section class="miTrabajo">
             <div class="MTprincipal">
-                <div class="mt-textos">
-                    <h2>Mis proyectos</h2>
+                <div >
+                    <h2 class="sobreMiTitulo">Mis proyectos</h2>
                     <p>
                         Proyectos personales
                     </p>
@@ -51,11 +52,17 @@
         let info=document.getElementById("infoSobreMi")
         let imagenMia=document.getElementById("yo")
 
+        var typed=new Typed(".escribir",{
+            strings:["Ing. Logistica y transporte","Programador","Desarrollador de videojuegos"],
+            typeSpeed:150,
+            backSpeed:85,
+            loop:true
+        });
         window.addEventListener('scroll',function(){
             let value=window.scrollY;
             titulo.style.marginTop=value*1.5+'px';
 
-            
+
         })
     </script>
 </body>
